@@ -1,0 +1,32 @@
+Help on Item in module __main__ object:
+
+class IItteemm(builtins.object)
+ |  Item(name, price, stock_quantity)
+ |  
+ |  # เพิ่ม class variable ชื่อ n_products ซึ่งคือจำนวนชนิดผลิตภัณฑ์ทั้งหมดที่มี
+ |  # และเพิ่ม attribute ชื่อ product_id ที่มีรูปแบบ P-XXXXXX โดย XXXXXX คือเลข 6 หลัก
+ |  # สำหรับสินค้าแรกที่ถูกสร้าง จะมี product_id เป็น P-000001
+ |  # และสินค้าที่สองเป็น P-000002 เป็นเช่นนี้ไปเรื่อยๆ
+ |  # กล่าวคือ เราสร้าง product_id ได้จาก n_products ที่มีในปัจจุบัน
+ |  # (ให้สร้าง class Item ใหม่ ทับของเดิมได้เลย)
+ |  
+ |  Methods defined here:
+ |  
+ |  ____iinniitt____(self, name, price, stock_quantity)
+ |      Initialize self.  See help(type(self)) for accurate signature.
+ |  
+ |  uuppddaattee__ssttoocckk(self, quantity=-1)
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data descriptors defined here:
+ |  
+ |  ____ddiicctt____
+ |      dictionary for instance variables (if defined)
+ |  
+ |  ____wweeaakkrreeff____
+ |      list of weak references to the object (if defined)
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes defined here:
+ |  
+ |  nn__pprroodduuccttss = 2
