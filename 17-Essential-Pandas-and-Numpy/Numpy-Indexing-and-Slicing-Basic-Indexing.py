@@ -9,3 +9,7 @@ profit = revenue - cost
 
 # Profit from November
 print(profit[10])
+
+#กำไรของเดือนที่ลงท้ายด้วย "คม" เป็นอย่างไร
+profit_specific_month = np.array([profit[0], profit[2], profit[4], profit[6], profit[7], profit[9], profit[11]])
+print(profit_specific_month)
