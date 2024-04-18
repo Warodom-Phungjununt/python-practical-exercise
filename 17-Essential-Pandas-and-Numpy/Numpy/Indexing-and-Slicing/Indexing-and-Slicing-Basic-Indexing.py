@@ -13,3 +13,8 @@ print(profit[10])
 #กำไรของเดือนที่ลงท้ายด้วย "คม" เป็นอย่างไร
 profit_specific_month = np.array([profit[0], profit[2], profit[4], profit[6], profit[7], profit[9], profit[11]])
 print(profit_specific_month)
+
+# Another method
+kom_months = np.array([1, 3, 5, 7, 8, 10, 12])
+kom_indices = kom_months - 1
+print(profit[kom_indices])

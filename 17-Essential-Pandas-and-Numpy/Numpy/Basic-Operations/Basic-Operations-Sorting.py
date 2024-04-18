@@ -14,4 +14,6 @@ print(profit_sorted)
 
 # Sort profits from highest to lowest. Enter the profit_reverse variable.
 profit_reverse = sorted(profit, reverse=True)
+profit_reverse = np.array(profit_reverse)
 print(profit_reverse)
+print(profit_reverse.dtype)

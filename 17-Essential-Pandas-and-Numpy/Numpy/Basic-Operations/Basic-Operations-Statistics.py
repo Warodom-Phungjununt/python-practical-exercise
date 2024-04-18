@@ -8,9 +8,9 @@ cost = np.array(cost)
 profit = revenue - cost
 
 # Find total income, total costs, and retained profits throughout the year.
-total_revenue = np.sum(revenue)
-total_cost = np.sum(cost)
-total_profit = np.sum(profit)
+total_revenue = np.sum(revenue) # revenue.sum()
+total_cost = np.sum(cost) # cost.sum()
+total_profit = np.sum(profit) # profit.sum()
 print('Total revenue: {:,.2f}'.format(total_revenue))
 print('Total cost: {:,.2f}'.format(total_cost))
 print('Total profit(loss): {:,.2f}'.format(total_profit))

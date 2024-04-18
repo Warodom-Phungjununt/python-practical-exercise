@@ -8,10 +8,10 @@ cost = np.array(cost)
 profit = revenue - cost
 
 # Record profits during quarter 1-4 into variables profit_Q1, ..., profit_Q4
-profit_Q1 = profit[:3]
-profit_Q2 = profit[3:6]
-profit_Q3 = profit[6:9]
-profit_Q4 = profit[9:]
+profit_Q1 = profit[:3].copy()
+profit_Q2 = profit[3:6].copy()
+profit_Q3 = profit[6:9].copy()
+profit_Q4 = profit[9:].copy()
 print(profit_Q1)
 print(profit_Q2)
 print(profit_Q3)
@@ -23,5 +23,17 @@ profit_Q2_sum = np.sum(profit_Q2)
 profit_Q3_sum = np.sum(profit_Q3)
 profit_Q4_sum = np.sum(profit_Q4)
 profit_sum = sorted(np.array([profit_Q1_sum, profit_Q2_sum, profit_Q3_sum, profit_Q4_sum]), reverse=True)
+profit_sum = np.array(profit_sum)
 print(profit_sum)
 print(f"The maximum profit is Quarter 4 which is {profit_sum[0]} million Baht")
+
+# profit in January, March, May, July, September, November
+month_indices = np.array([1, 3, 5, 7, 9, 11]) - 1
+print(profit[month_indices])
+
+# Remark: Slicing is not copying but it is referring from the previous position.
+print(profit)
+print(profit_Q1)
+profit_Q1[0] = 999
+print(profit_Q1)
+print(profit)
